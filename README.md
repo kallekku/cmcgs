@@ -2,7 +2,7 @@ Continuous Monte Carlo Graph Search
 ======
 Code for the *Continuous Monte Carlo Graph Search* (AAMAS 2024), [arXiV](https://arxiv.org/abs/2210.01426) 
 
-![image][images/CMCGS.png]
+![image](images/CMCGS.png)
 
 Continuous Monte Carlo Graph Search is an extension of MCTS to online planning in environments with continuous state and action spaces. CMCGS takes advantage of the insight that, during planning, sharing the same action policy between several states can yield high performance. To implement this idea, at each time step, CMCGS clusters similar states into a limited number of stochastic action bandit nodes, which produce a layered directed graph instead of an MCTS search tree. Experimental evaluation shows that CMCGS outperforms comparable planning methods in several complex continuous DeepMind Control Suite benchmarks and a 2D navigation task with limited sample budgets. Furthermore, CMCGS can be parallelized to scale up and it can outperform the Cross-Entropy Method (CEM) in continuous control with learned dynamics models.
 
