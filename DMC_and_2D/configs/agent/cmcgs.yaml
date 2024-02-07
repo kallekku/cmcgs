@@ -1,0 +1,18 @@
+name: cmcgs
+
+params: 
+    simulation_budget: 2500
+
+    min_graph_length: 3
+    rollout_length: 5
+    clustering_alg: "agglomerative"
+    elite_ratio: 0.1
+
+    optimal_prob: 0.3
+    optimal_n_top: 3
+    optimal_range: 0.1
+    max_n_clusters: 0
+    min_update_divisor: 2
+
+    alpha: 5
+    beta: 2
